@@ -1,9 +1,11 @@
 import React from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
+import SearchBar from './SearchBar';
 
 export default App = () => {
   return (
     <View style={styles.container}>
+      <SearchBar />
       <FlatList
         data={[
           {key: 'Milk'},
@@ -29,7 +31,7 @@ const styles = StyleSheet.create({
     height: 44,
     borderStyle: 'solid',
     borderBottomWidth: 2,
-    borderBottomColor: 'grey',
+    borderBottomColor: '#a3a3a3',
     marginLeft: 10,
     marginRight: 20
   },
